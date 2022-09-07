@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
 </head>
+
 <body>
     <main class="app">
         <section class="greeting">
             <h2 class="title">
-                What's up, <input type="text" id="name" placeholder="Name here">             
+                What's up, <input type="text" id="name" placeholder="Name here">
             </h2>
         </section>
         <section class="create-todo">
             <h3>Create a To-Do</h3>
             <form id="new-todo-form">
                 <h4>What's on your To-Do list?</h4>
-                <input  
-                    type="text" 
-                    name="content" 
-                    id="content" 
-                    placeholder="e.g. talk to clients"/>
+                <input type="text" name="content" id="content" placeholder="e.g. talk to clients" />
                 <h4>Pick a category</h4>
                 <div class="options">
                     <label>
-                        <input 
-                            type="radio"
-                            name="category"
-                            id="category1"
-                            value="business"/>
-                            <span class="buble business"></span>
-                            <div>Business</div>
+                        <input type="radio" name="category" id="category1" value="business" />
+                        <span class="buble business"></span>
+                        <div>Business</div>
                     </label>
                     <label>
-                        <input 
-                            type="radio"
-                            name="category"
-                            id="category2"
-                            value="personal"/>
-                            <span class="buble personal"></span>
-                            <div>Personal</div>
+                        <input type="radio" name="category" id="category2" value="personal" />
+                        <span class="buble personal"></span>
+                        <div>Personal</div>
                     </label>
                 </div>
-                    <input type="submit" value="Add ToDo">
+                <input type="submit" value="Add ToDo">
                 <section class="todo-list">
                     <h3>To Do List</h3>
                     <div class="list" id="to-do-lits"></div>
                     <div class="to-do-item">
                         <label>
-                            <input type="checkbox"/>
+                            <input type="checkbox" />
                             <span class="buble business"></span>
                         </label>
                     </div>
                     <div class="to-do-content">
-                        <input type="text" value="Talk to clients" readonly/>
+                        <input type="text" value="Talk to clients" readonly />
                     </div>
                     <div class="actions">
                         <button class="edit">Edit</button>
@@ -65,12 +55,12 @@
 
                     <div class="to-do-item">
                         <label>
-                            <input type="checkbox"/>
+                            <input type="checkbox" />
                             <span class="buble personal"></span>
                         </label>
                     </div>
                     <div class="to-do-content">
-                        <input type="text" value="Go to gym" readonly/>
+                        <input type="text" value="Go to gym" readonly />
                     </div>
                     <div class="actions">
                         <button class="edit">Edit</button>
@@ -83,4 +73,5 @@
     </main>
     <script src="main.js"></script>
 </body>
+
 </html>
