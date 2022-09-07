@@ -66,14 +66,3 @@ h4{
     font-weight: 700;
 }
 
-.create-todo input[type="text"]{
-    display: block;
-    width: 100%;
-    font-size: 1.125rem;
-    padding: 1rem 1.5rem;
-    color: var(--dark);
-    background-color: #FFF;
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow);
-    margin-bottom: 1.5rem;
-}
