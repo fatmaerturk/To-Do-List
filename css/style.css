@@ -6,9 +6,7 @@
     --dark:rgb(49, 49, 49);
     --danger:rgb(148, 36, 36);
     --gray: rgb(121, 115, 115);
- 
     --shadow: 0 1px 3px rgba(17, 17, 17, 0.75);
-    
     --business-glow: 0 1px 3px rgba(58,130,238,0.75);
     --personal-glow: 0 1px 3px rgba(196, 41, 149, 0.75);
 }
@@ -204,6 +202,10 @@ input:checked ~ .buble::after{
 }
 
 .todo-item .actions .delete{
-    margin-right: 0.5rem;
     background-color: var(--danger);
+}
+
+.toto-item.done .tudo-content input{
+    text-decoration: line-through;
+    color: var(--grey);
 }
