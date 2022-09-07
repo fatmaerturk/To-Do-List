@@ -111,7 +111,7 @@ input[type="checkbox"]{
     height: 20px;
     border-radius: 50%;
     border: 2px solid var(--business);
-    box-shadow: var(--personal-glow);
+    
 }
 
 .buble.personal{
@@ -175,17 +175,35 @@ input:checked ~ .buble::after{
     flex:  1 1 0%;
 }
 
-.tudo-item .tudo-content input{
+.todo-item .tudo-content input{
     color: var(--dark);
     font-size: 1.125rem;
 }
 
-.tudo-item .actions{
+.todo-item .actions{
     display: flex;
     align-items: center;
 }
 
-.tudo-item .actions button{
+.todo-item .actions button{
     display: block;
-    
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color:#FFF;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;    
+}
+
+.todo-item .actions button:hover{
+    opacity: 0.75;
+}
+
+.todo-item .actions .edit{
+    margin-right: 0.5rem;
+    background-color: var(--primary);
+}
+
+.todo-item .actions .delete{
+    margin-right: 0.5rem;
+    background-color: var(--danger);
 }
